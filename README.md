@@ -262,7 +262,7 @@ npm start //服务器跑
 cd client
 npm i / yarn
 npm run dev //本地开发
-npm start //服务器跑
+npm start //服务上跑客户端
 
 ```
 
