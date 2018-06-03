@@ -1,0 +1,25 @@
+{
+	"name": "vpr_client",
+	"script": "./build/dev-server.js",
+	"cwd": "./",
+	"watch": [
+		"build",
+		"config",
+		"src"
+	],
+	"ignore_watch": [
+		"node_modules",
+		"logs",
+		"public",
+		"static"
+	],
+	"watch_options": {
+		"followSymlinks": false
+	},
+	"error_file": "./logs/app-err.log",
+	"out_file": "./logs/app-out.log",
+	"log_date_format" : "YYYY-MM-DD HH:mm Z",
+	"env": {
+		"NODE_ENV": "development"
+	}
+}
