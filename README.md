@@ -10,27 +10,37 @@
 说干就干，在寻找 声纹识别服务商，发现什么科大讯飞，还什么BAT等许多大厂都没有支持Web端的，后来找到一个不知名的小厂。。
 <br/>
 
+
+
 具体的流程如下：
+
+
+
 ![具体流程](imgs/flow.png)
 
 <br/>
 
 声纹注册用户(最终效果图)
+
+
+
 ![注册效果图](imgs/reg-vpr.gif)
 
 <br/>
 
 声纹登录(最终效果图)
 
+
+
 ![登陆效果图](imgs/login-vpr.gif)
 
 <br/>
 
-
 上传文件识别：
+
 ![上传文件识别](imgs/upload-result.png)
 
-<br/>
+<br/><br/>
 
 ### 服务端
 
@@ -84,7 +94,7 @@ ctx.body = {
     signature: signature
 }
 ```
-<br/>
+<br/><br/>
 
 
 
@@ -105,7 +115,7 @@ app.use(
 );
 ```
 
-<br/>
+<br/><br/>
 
 ffmpeg转码
 
@@ -127,7 +137,7 @@ var command = ffmpeg(_delPath.amr)
 .save(_delPath.fix);
 ```
 
-<br/>
+<br/><br/>
 
 提交声纹服务器
 
@@ -170,7 +180,7 @@ await new Promise((resolve, reject) => {
     });
 });
 ```
-<br/>
+<br/><br/>
 
 ### 客户端
 
@@ -188,7 +198,7 @@ mounted() {
 	vm.wx_init();
 }
 ```
-<br/>
+<br/><br/>
 
 获取微信签名，注册事件
 ```javascript
@@ -210,7 +220,7 @@ wx.config({
 });
 ```
 
-<br/>
+<br/><br/>
 
 提前提示用户授权录音功能， 为了避免 正式开始录音时，同时提示授权，此时录音功能状态已经失控。
 ```javascript
@@ -229,7 +239,7 @@ if (!localStorage.rainAllowRecord || localStorage.rainAllowRecord !== "true" ) {
 
 好了， talk is cheap, show you the code.
 
-<br/>
+<br/><br/>
 
 使用方法
 
