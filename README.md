@@ -114,8 +114,8 @@ ffmpeg转码
 const ffmpeg = require('fluent-ffmpeg');
 ....
 var command = ffmpeg(_delPath.amr)
-.audioBitrate('16k')  //
-.audioFrequency(16000)
+.audioBitrate('16k')  //16k音频采样率
+.audioFrequency(16000)  //16比特音频信号
 .audioQuality(10)   //音频质量
 .on('end', function() {
 	console.log('file has been converted succesfully');
