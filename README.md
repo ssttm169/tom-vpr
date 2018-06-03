@@ -40,6 +40,14 @@
 
 ![上传文件识别](imgs/upload-result.png)
 
+
+
+pm2线程
+
+![上传文件识别](imgs/pm2.png)
+
+
+
 <br/><br/>
 
 ### 服务端
@@ -76,7 +84,7 @@ var api = await new WechatAPI(
 
 注：如果报读取不了token文件，就手动在相应的目录，新建的文本文件, 比如 access_token.txt
 
-<br/><br/>
+<br/>
 
 获取微信签名
 ```javascript
@@ -94,7 +102,7 @@ ctx.body = {
     signature: signature
 }
 ```
-<br/><br/>
+<br/>
 
 
 
@@ -115,7 +123,7 @@ app.use(
 );
 ```
 
-<br/><br/>
+<br/>
 
 ffmpeg转码
 
@@ -137,7 +145,7 @@ var command = ffmpeg(_delPath.amr)
 .save(_delPath.fix);
 ```
 
-<br/><br/>
+<br/>
 
 提交声纹服务器
 
@@ -198,7 +206,7 @@ mounted() {
 	vm.wx_init();
 }
 ```
-<br/><br/>
+<br/>
 
 获取微信签名，注册事件
 ```javascript
@@ -220,7 +228,7 @@ wx.config({
 });
 ```
 
-<br/><br/>
+<br/>
 
 提前提示用户授权录音功能， 为了避免 正式开始录音时，同时提示授权，此时录音功能状态已经失控。
 ```javascript
@@ -239,7 +247,7 @@ if (!localStorage.rainAllowRecord || localStorage.rainAllowRecord !== "true" ) {
 
 好了， talk is cheap, show you the code.
 
-<br/><br/>
+<br/>
 
 使用方法
 
