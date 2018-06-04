@@ -10,6 +10,7 @@ const CONF = {
 
 	//声纹识别配置
 	vpr:{
+		appkey: 'xxx',  //appkey
 		groupid: "001",  //音频文件分组号
 		threshold: "61", //识别阈值
 		thresholdVerify: "61", //判别阈值

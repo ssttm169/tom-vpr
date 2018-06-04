@@ -59,7 +59,7 @@ model.Verify = async actions => {
 			"x-task-config": task_config,
 			"x-request-date": xdate,
 			"x-sdk-version": "5.1",
-			"x-app-key": "c45d5413"
+			"x-app-key": config.vpr.appkey
 		},
 		formData: {
 			// Like <input type="file" name="file">
